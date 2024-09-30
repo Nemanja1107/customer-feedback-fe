@@ -1,0 +1,37 @@
+<div class="recent-comments" style=" background-color: #444648; margin-top: -50px;">
+    <section>
+        <div class="container my-5 py-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-12 col-lg-10">
+                    <div class="card text-body">
+                        <div class="card-body p-4">
+                            <h4 class="mb-0">Recent comments</h4>
+                            <p class="fw-light mb-4 pb-2">Latest Comments section by users</p>
+
+                            <div class="d-flex flex-start mt-3" *ngFor="let review of recentReviews let i = index">
+                                <div>
+                                    <h6 class="fw-bold mb-1">Comment: {{i+1}}</h6>
+                                    <h6 class=" fw-bold mb-1 mt-3">{{review.username}}</h6>
+                                    <div class="d-flex align-items-center">
+                                        <p class="mb-0">
+                                            {{review.comment}}
+                                            <br>
+                                            <span>Rating: </span>
+                                            <span *ngFor="let star of stars.slice(0,review.rating)"
+                                                class="fa fa-star mt-2"></span>
+                                            <span *ngFor="let star of stars.slice(review.rating,5)"
+                                                class="fa fa-star-o"></span>
+                                        </p>
+                                    </div>
+                                    <p>
+                                        Created At: {{ review.createdAt | date:'medium' }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

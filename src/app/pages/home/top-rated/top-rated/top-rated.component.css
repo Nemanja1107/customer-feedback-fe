@@ -1,0 +1,40 @@
+.carousel-control-prev,
+.carousel-control-next {
+    margin-top: -30px;  
+}
+
+.carousel-control-prev {
+    left: 400px;  
+}
+
+.carousel-control-next {
+    right: 400px;  
+}
+
+.fa-star {
+    color: gold;  
+}
+
+.fa-star-o {
+    color: gray;  
+}
+
+@media (max-width: 768px) {
+    .carousel-control-prev {
+        left: 20px;  
+    }
+
+    .carousel-control-next {
+        right: 20px;  
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-control-prev {
+        left: 10px;  
+    }
+
+    .carousel-control-next {
+        right: 10px;   
+    }
+}

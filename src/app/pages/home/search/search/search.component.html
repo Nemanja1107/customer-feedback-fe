@@ -1,0 +1,24 @@
+<div class="container mt-4 mb-5" id="search">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-9">
+            <div class="card p-4 mt-3">
+                <h3 class="heading mt-5 text-center">Hi! Search your favourite store here</h3>
+                <div class="d-flex justify-content-center px-5">
+                    <div class="search"> <input type="text" class="search-input" placeholder="Search..." name=""> <a
+                            href="" class="search-icon"> <i class="bi bi-search"></i> </a> </div>
+                </div>
+                <div class="row mt-4 g-1 px-4 mb-5">
+                    <div class="col-md-2" *ngFor="let store of stores.slice(0,5)">
+                        <div class="card-inner p-3 d-flex flex-column align-items-center">
+                            <img [src]="'/assets/' + store.logo" width="50">
+                            <div class="text-center mg-text"> <span class="mg-text">{{store.name}}</span> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

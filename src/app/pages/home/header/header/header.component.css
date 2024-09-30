@@ -1,0 +1,42 @@
+.header {
+    background-color: #000000;
+    padding: 20px 0;
+    color:white;
+    font-size: larger;
+}
+
+.logo {
+    height: 40px;  
+}
+
+nav{
+    margin-right: -70px;
+    color: white;
+}
+
+.nav-item {
+    margin-right: 20px; 
+}
+
+.btn-custom {
+    border: none;
+    border-radius: 60px; 
+    padding: 10px 20px; 
+    background-color: #007bff;  
+    color: white;
+    width: 120px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;  
+}
+
+.nav-link {
+    padding: 0;  
+}
+
+label{
+    color: black;
+}
+ 
